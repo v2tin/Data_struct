@@ -123,17 +123,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main3.cpp">
+    <ClCompile Include="Clear.cpp" />
+    <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Logic.cpp" />
+    <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Save.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="Update.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Clear.h" />
+    <ClInclude Include="GameLoop.h" />
     <ClInclude Include="inc.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Logic.h" />
     <ClInclude Include="Render.h" />
     <ClInclude Include="Save.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Update.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
